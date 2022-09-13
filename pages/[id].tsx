@@ -14,6 +14,7 @@ const Detail = () => {
   const { ItemStore } = useStores();
   const { itemDetail } = ItemStore;
   const componentRef = React.useRef();
+  const [data, setData] = React.useState();
 
   const router = useRouter()
   const id = router?.query?.id
@@ -22,6 +23,7 @@ const Detail = () => {
     const fetchDetail = async () => {
       try {
         await ItemStore.getItemDetail(id);
+        setData(itemDetail)
       } catch (err) {
         console.error('error', err)
       }
