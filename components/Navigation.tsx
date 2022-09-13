@@ -17,7 +17,7 @@ const Navigation = (): JSX.Element => {
         >
           <Link href="/" style={{ textDecoration: 'none', marginRight: '1rem', color: '#000' }}>
             <Stack style={{ fontSize: '1rem', marginRight: '1rem', lineHeight: '1rem' }}>
-              Bob's Burger <span>Character</span>
+              Bobs Burger <span>Character</span>
             </Stack>
           </Link>
           <div style={{ marginRight: '1rem' }}>
