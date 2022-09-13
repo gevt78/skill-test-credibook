@@ -71,7 +71,7 @@ const Home = () => {
     };
 
     doc.text(title, marginLeft, 32);
-    doc.autoTable(content);
+    (doc as any).autoTable(content);
     doc.save("report.pdf")
   }
 
