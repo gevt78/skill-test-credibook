@@ -7,7 +7,7 @@ enableStaticRendering(isServer);
 let store: RootStore | null = null;
 
 const initialRoot = {
-  ItemStore: initialItem || initialItemDetail,
+  ItemStore: initialItem || initialItemDetail as any,
 };
 
 export class RootStore {
